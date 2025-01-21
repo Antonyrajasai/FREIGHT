@@ -2836,19 +2836,14 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value xml:space="preserve"> </Value>
+                              <Value>1. DD should be made out to SABIN GLOBAL LOGISTICS PVT LTD. The company is not responsible for any cash settlement without an official receipt.
+2. Any discrepancy should be notified to us in writing within 2 days from the invoice date, Otherwise it will be presumed that the amount reflected on the bill is correct and have been verified at your end. 
+3. Payment must be received within the agreed credit period, failing which interest @24% per annum will be charged on overdue invoices.
+4. All Objections/Claims are subject to Chennai Jurisdiction</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
                                 <FontSize>9pt</FontSize>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>If any discrepancy is noticed in the invoice, kindly inform us in writing within 7 days, otherwise the above amount will be considered as correct,
-“Subject to Chennai Jurisdiction”.</Value>
-                              <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>8.5pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontWeight>Normal</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -2859,26 +2854,11 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CHEQUES : All cheques / demand drafts in payment of bills should be drawn in favour of  'Jeevan Shipping &amp; Logistics Pvt Ltd, on chennai banks accpunt and should be crossed A/c Payee only'. No outstation cheques will be accepted even if it is payable 'At Par'.</Value>
+                              <Value />
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>8.5pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
-                              </Style>
-                            </TextRun>
-                          </TextRuns>
-                          <Style>
-                            <TextAlign>Left</TextAlign>
-                          </Style>
-                        </Paragraph>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>CASH : Any cash payments should be made directly to the cashier in our office. Company's printed official receipt, duly signed by the cashier must always be obtained against payment made in cash as it will be considered as the only valid document for such payment.</Value>
-                              <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontSize>8.5pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>7pt</FontSize>
+                                <FontWeight>Normal</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -3008,7 +2988,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>For BLISS INTERNATIONAL CARGO LLP</Value>
+                              <Value>For SABIN GLOBAL LOGISTICS</Value>
                               <Style>
                                 <FontFamily>Courier New</FontFamily>
                                 <FontWeight>Bold</FontWeight>
@@ -3058,15 +3038,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Bank            </Value>
-                              <Style>
-                                <FontFamily>Times New Roman</FontFamily>
-                                <FontWeight>Normal</FontWeight>
-                              </Style>
-                            </TextRun>
-                            <TextRun>
-                              <Value>: PUNJAB NATIONAL BANK
-</Value>
+                              <Value>A/C Name        :  </Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
                                 <FontSize>8.5pt</FontSize>
@@ -3074,15 +3046,21 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>Branch</Value>
+                              <Value>=First(Fields!ACCOUNT_NAME.Value, "DataSet1")</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
-                                <FontWeight>Normal</FontWeight>
+                                <FontSize>9pt</FontSize>
                               </Style>
                             </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
                             <TextRun>
-                              <Value>          : BELLARI ROAD,YELAHANKA,BANGALORE-560064
-</Value>
+                              <Value>A/C No             :  </Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
                                 <FontSize>8.5pt</FontSize>
@@ -3090,15 +3068,22 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>IFSC Code </Value>
+                              <Value>=First(Fields!ACCOUNT_NUMBER.Value, "DataSet1")</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>9pt</FontSize>
                                 <FontWeight>Normal</FontWeight>
                               </Style>
                             </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
                             <TextRun>
-                              <Value> : PUNB0082610
-</Value>
+                              <Value>IFSC Code      :  </Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
                                 <FontSize>8.5pt</FontSize>
@@ -3106,15 +3091,22 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>Cur A/c No </Value>
+                              <Value>=First(Fields!IFSC_CODE.Value, "DataSet1")</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>9pt</FontSize>
                                 <FontWeight>Normal</FontWeight>
                               </Style>
                             </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
                             <TextRun>
-                              <Value>: 08264011000417
-</Value>
+                              <Value>Bank Name     :  </Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
                                 <FontSize>8.5pt</FontSize>
@@ -3122,18 +3114,34 @@
                               </Style>
                             </TextRun>
                             <TextRun>
-                              <Value>PAN No  </Value>
+                              <Value>=First(Fields!BANK_NAME.Value, "DataSet1")</Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>9pt</FontSize>
                                 <FontWeight>Normal</FontWeight>
                               </Style>
                             </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
                             <TextRun>
-                              <Value>    : AAPFB6150K</Value>
+                              <Value>Branch Name :  </Value>
                               <Style>
                                 <FontFamily>Times New Roman</FontFamily>
                                 <FontSize>8.5pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                            <TextRun>
+                              <Value>=First(Fields!BRANCH_NAME.Value, "DataSet1")</Value>
+                              <Style>
+                                <FontFamily>Times New Roman</FontFamily>
+                                <FontSize>9pt</FontSize>
+                                <FontWeight>Normal</FontWeight>
                               </Style>
                             </TextRun>
                           </TextRuns>
